@@ -1,0 +1,32 @@
+.experiences {
+  padding-left: var(--left-padding);
+  font-size: var(--f-size-a);
+
+  .exp {
+    margin-bottom: 15px;
+    transition: all var(--time-750);
+
+    &.hide {
+      transition: all 0s;
+      transform: translateY(100px) scale(1.5);
+      opacity: 0;
+    }
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+
+      .label {
+        .icon {
+          height: 1.5rem;
+          margin-right: 5px;
+          vertical-align: middle;
+        }
+
+        .company {
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}

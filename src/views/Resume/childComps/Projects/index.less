@@ -1,0 +1,22 @@
+.projects {
+  .proj {
+    margin-bottom: 25px;
+    padding-left: var(--left-padding);
+    font-size: var(--f-size-a);
+    transition: all var(--time-750);
+
+    &.hide {
+      transition: all 0s;
+      opacity: 0;
+      transform: translateX(250px) translateY(100px) scale(0.85);
+    }
+
+    .bold {
+      font-weight: 900;
+    }
+
+    .content {
+      padding-left: 1em;
+    }
+  }
+}

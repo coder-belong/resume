@@ -1,0 +1,25 @@
+.education {
+  display: flex;
+  justify-content: space-between;
+  padding-left: var(--left-padding);
+  font-size: var(--f-size-a);
+  transition: all var(--time-750);
+
+  &.hide {
+    transition: all 0s;
+    opacity: 0;
+    transform: translateX(250px);
+  }
+
+  .edu {
+    .icon {
+      height: 1.5rem;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+
+    .school {
+      font-weight: 900;
+    }
+  }
+}
